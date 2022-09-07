@@ -1,0 +1,189 @@
+body{
+    background: #FBF3ED;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin: 0px;
+    padding: 0px;
+}
+
+.button{
+    border: none;
+    background-color: #4e4d4d;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.button:hover{
+    background-color: black;
+}
+
+/* NAVBAR */
+
+.nav-bar{
+    display: flex;
+    padding: 0px;
+    /* margin-top: 2%; */
+    /* margin-bottom: 4.5rem; */
+}
+
+
+
+
+.nav-items{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item{
+    padding-right: 20px;
+    font-family:'Poppins', sans-serif;
+
+}
+
+#logo1{
+    width: 200px;
+    display:inline;
+}
+
+#nav-items{
+    padding: 0 18px;
+    color: black;
+}
+
+#nav-items{
+    display: flex;
+    padding: 0 18px;
+    display: inline;
+    justify-content: end;
+
+}
+
+/* Events Display */
+.event-img{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 82vh;
+    border-radius: 14px;
+}
+.event-description-content{
+    line-height: 26px;
+    letter-spacing: 0.025em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: #333333;
+}
+.Title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: green;
+    letter-spacing: 0.1em;
+    color: white;
+}
+.comp-name{
+    color: white;
+}
+
+
+
+/* BAND */
+
+
+.band{
+    position: relative;
+    padding: 5% 3% 3% 3%;
+    /* background-image: url("./images/band-background.jpg"); */
+    width: 100%;
+}
+.band:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-image: url("images/band.jpg");
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-size: cover;
+  }
+
+
+/* DJ */
+.DJ{
+    position: relative;
+    padding: 5% 3% 3% 3%;
+    /* background-image: url("./images/band-background.jpg"); */
+    width: 100%;
+    
+}
+.DJ:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-image: url("images/DJ-back.jpg");
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-size: cover;
+  }
+
+.DJ > .event-description-content{
+    color: white;
+}
+
+/* GAMING */
+.gaming{
+    position: relative;
+    padding: 5% 3% 3% 3%;
+    /* background-image: url("./images/band-background.jpg"); */
+    width: 100%;
+    font-weight: 500;
+}
+.gaming:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-image: url("images/gaming-back-2.jpg");
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-size: cover;
+  }
+
+
+/* MEIDIA QUERY */
+
+@media (max-width: 576px){
+    .event-img{
+        height: 100%;
+        width: 100%;
+    }
+    .DJ .event-description-content{
+        color: white;
+        font-weight: 500;
+    }
+    .band .button{
+        align-items: center;
+        justify-content: center;
+        vertical-align: center;
+        text-align: center;
+    }
+}
+
